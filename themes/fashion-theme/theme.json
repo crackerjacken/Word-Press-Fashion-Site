@@ -63,6 +63,13 @@
 		"color": {
 			"background": "var(--wp--preset--color--white)",
 			"text": "var(--wp--preset--color--black)"
+		},
+		"blocks": {
+			"core/paragraph": {
+				"color": {
+					"text": "var(--wp--preset--color--secondary)"
+				}
+			}
 		}
 	}
 }

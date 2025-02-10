@@ -100,7 +100,26 @@
 				"color": {
 					"text": "var(--wp--preset--color--secondary)"
 				}
+			},
+			"core/heading": {
+				"spacing": {
+					"padding": {
+						"top": "10px",
+						"right": "5vw",
+						"bottom": "10px",
+						"left": "5vw"
+					}
+				},
+				"color": {
+					"background": "var(--wp--preset--color--primary)",
+					"text": "var(--wp--preset--color--white)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--sofia-sans)",
+					"fontSize": "2.5rem"
+				}
 			}
 		}
 	}
+	
 }

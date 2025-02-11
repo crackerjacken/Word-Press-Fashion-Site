@@ -311,8 +311,33 @@
 					"color": "var(--wp--preset--color--white)",
 					"radius": " 0.75rem "
 				}
-			}
-		
+			},
+			"core/pullquote": {
+				"spacing": {
+					"padding": {
+						"top": "1.5rem",
+						"right": "6vw",
+						"bottom": "1.5rem",
+						"left": "6vw"
+					},
+					"margin": {
+						"top": "1rem",
+						"bottom": "1rem",
+						"left": "auto",
+						"right": "auto"
+					}
+				},
+				"color": {
+					"text": "var(--wp--preset--color--secondary)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--dm-serif)",
+					"fontSize": "1.75rem",
+					"lineHeight": "1.8",
+					"fontWeight": "700",
+					"fontStyle": "italic"
+				}
+			}	
 		}
 
 	}

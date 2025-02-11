@@ -81,7 +81,21 @@
 							"src": [ "file:./assets/fonts/dm-serif/dmSerif.ttf" ]
 						}
 					]
-				}
+				},
+				{
+					"name": "sometype Mono",
+					"slug": "sometype-mono",
+					"fontFamily": "sometype Mono, monospace",
+					"fontFace": [
+						{
+							"fontFamily": "sometype Mono",
+							"fontWeight": "400",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": ["file:./assets/fonts/sometype-mono/sometypeMono.ttf"]
+						}
+					]
+				}				
 			]
 		}
 	},
@@ -97,14 +111,14 @@
 			"core/paragraph": {
 				"spacing": {
 					"padding": {
-						"top": "20px",
+						"top": "1.25rem",
 						"right": "5vw",
-						"bottom": "20px",
+						"bottom": "1.25rem",
 						"left": "5vw"
 					},
 					"margin": {
-						"top": "10px",
-						"bottom": "10px"
+						"top": "0.625rem",
+						"bottom": "0.625rem"
 					}
 				},
 				"typography": {
@@ -118,9 +132,9 @@
 			"core/heading": {
 				"spacing": {
 					"padding": {
-						"top": "10px",
+						"top": "0.625rem",
 						"right": "5vw",
-						"bottom": "10px",
+						"bottom": "0.625rem",
 						"left": "5vw"
 					}
 				},
@@ -136,37 +150,37 @@
 			"core/list": {
 				"spacing": {
 					"padding": {
-						"top": "15px",
+						"top": "0.9375rem",
 						"right": "5vw",
-						"bottom": "15px",
+						"bottom": "0.9375rem",
 						"left": "5vw"
 					},
 					"margin": {
-						"top": "0px",
-						"bottom": "0px"
+						"top": "0",
+						"bottom": "0"
 					}
 				},
 				"typography": {
 					"fontSize": "1.2rem"
 				},
 				"border": {
-					"width": "2px",
+					"width": "0.125rem",
 					"style": "solid",
 					"color": "var(--wp--preset--color--primary)",
-					"radius": "5px"
+					"radius": "0.3125rem"
 				}
 			},
 			"core/quote": {
 				"spacing": {
 					"padding": {
-						"top": "20px",
+						"top": "1.25rem",
 						"right": "5vw",
-						"bottom": "20px",
+						"bottom": "1.25rem",
 						"left": "5vw"
 					},
 					"margin": {
-						"top": "15px",
-						"bottom": "15px"
+						"top": "0.9375rem",
+						"bottom": "0.9375rem"
 					}
 				},
 				"typography": {
@@ -176,17 +190,17 @@
 					"lineHeight": "1.7"
 				}
 			},
-			"core/code": {
-				"spacing": {
+					"core/code": {
+						"spacing": {
 					"padding": {
-						"top": "15px",
+						"top": "0.9375rem",
 						"right": "5vw",
-						"bottom": "15px",
+						"bottom": "0.9375rem",
 						"left": "5vw"
 					},
 					"margin": {
-						"top": "10px",
-						"bottom": "10px"
+						"top": "0.625rem",
+						"bottom": "0.625rem"
 					}
 				},
 				"color": {
@@ -203,8 +217,71 @@
 					"color": "var(--wp--preset--color--primary)",
 					"radius": "5px"
 				}
+			},
+			"core/details": {
+				"spacing": {
+					"padding": {
+						"top": "0.9375rem",
+						"right": "5vw",
+						"bottom": "0.9375rem",
+						"left": "5vw"
+					},
+					"margin": {
+						"top": "0.625rem",
+						"bottom": "0.625rem"
+					}
+				},
+				"color": {
+					"text": "var(--wp--preset--color--black)",
+					"background": "var(--wp--preset--color--white)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--sometype-mono)",
+					"fontSize": "1.2rem",
+					"fontWeight": "400",
+					"lineHeight": "1.6"
+				},
+				"border": {
+					"width": "0.0625rem",
+					"style": "dashed",
+					"color": "var(--wp--preset--color--black)",
+					"radius": "0.3125rem"
+				}
+			},
+			"core/preformatted": {
+				"spacing": {
+					"padding": {
+						"top": "1.5625rem",
+						"right": "7vw",
+						"bottom": "1.5625rem",
+						"left": "7vw"
+					},
+					"margin": {
+						"top": "1.25rem",
+						"bottom": "1.25rem",
+						"left": "auto",
+						"right": "auto"
+					}
+					},
+				"color": {
+					"text": "var(--wp--preset--color--secondary)",
+					"background": "var(--wp--preset--color--black)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--sometype-mono)",
+					"fontSize": "1.3rem",
+					"lineHeight": "1.8",
+					"fontWeight": "700",
+					"letterSpacing": "2px",
+					"textTransform": "uppercase"
+				},
+				"border": {
+					"width": "1rem",
+					"style": "double",
+					"color": "var(--wp--preset--color--white)",
+					"radius": " 0.75rem "
+				}
 			}
-
 		
 		}
 

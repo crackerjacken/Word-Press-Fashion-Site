@@ -1,0 +1,1 @@
+console.log("Hello World! (from fashion-blocks-copyright block)");

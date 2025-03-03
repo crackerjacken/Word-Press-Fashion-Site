@@ -1,0 +1,4 @@
+.wp-block-buttons .wp-block-button.is-style-icon .wp-block-button__link::after {
+    content: '>';
+    margin-left: 10px;
+}

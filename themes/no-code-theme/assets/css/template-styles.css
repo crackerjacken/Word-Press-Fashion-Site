@@ -157,3 +157,14 @@
     margin: auto !important;
     margin-bottom: 5vh !important;
 }
+
+.wc-block-cart-item__wrap {
+    color: black !important;
+}
+
+.wc-block-mini-cart__drawer .wp-block-woocommerce-mini-cart-contents {
+    box-sizing: border-box;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+}

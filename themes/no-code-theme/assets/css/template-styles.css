@@ -43,3 +43,13 @@
 .wp-block-post.post-305.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-uncategorized {
     margin-top: 2.8vh !important;
 }
+
+.wp-block-post-title.has-x-large-font-size {
+    padding-right: 0;
+    padding-left: 0vw;
+    margin-right: var(--wp--preset--spacing--80);
+    margin-left: var(--wp--preset--spacing--80);
+    text-align: center;
+    display: block;
+    width: 100%;
+}

@@ -168,3 +168,26 @@
     padding: 0;
     position: relative;
 }
+
+
+h2.wc-block-mini-cart__title {
+    align-items: baseline;
+    background: inherit;
+    display: flex;
+    font-size: 2em;
+    margin: 0;
+    mask-image: none;
+    padding-bottom: 32px;
+    z-index: 1;
+    background-color: #0f0142;
+    color: white;
+    padding: 3% !important;
+}
+
+.wp-block-woocommerce-empty-mini-cart-contents-block,
+.wp-block-woocommerce-filled-mini-cart-contents-block {
+    display: block;
+    flex-direction: column;
+    height: 100%;
+    max-height: fill-available;
+}

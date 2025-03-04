@@ -25,5 +25,10 @@ function fashion_theme_enqueue_block_assets() {
         'fashion-theme-block-styles',
         get_theme_file_uri('assets/css/block-styles.css'),
     );
+
+    wp_enqueue_style(
+        'fashion-theme-template-styles',
+        get_theme_file_uri('assets/css/template-styles.css'),
+    );
 }
 add_action('enqueue_block_assets', 'fashion_theme_enqueue_block_assets');

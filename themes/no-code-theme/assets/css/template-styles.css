@@ -248,3 +248,28 @@ h2.wc-block-mini-cart__title {
     display: block !important;
     margin: 20px auto !important;
 }
+
+
+.wp-block-woocommerce-checkout-actions-block .wc-block-checkout__actions_row .wc-block-components-checkout-place-order-button {
+    background-color: #090045 !important;
+    color: #ffffff !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    padding: 14px 24px !important;
+    border: none !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease-in-out !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 20px auto !important;
+    text-align: center !important;
+    box-shadow: 0 4px 12px rgba(9, 0, 69, 0.4) !important;
+    width: auto !important;
+    min-width: 200px !important;
+    max-width: 300px !important;
+    height: 50px !important;
+    line-height: 50px !important;
+}

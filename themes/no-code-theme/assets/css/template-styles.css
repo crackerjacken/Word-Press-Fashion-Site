@@ -39,3 +39,7 @@
 :root :where(.is-layout-flow) > :first-child {
     margin-block-start: 0;
 }
+
+.wp-block-post.post-305.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-uncategorized {
+    margin-top: 2.8vh !important;
+}

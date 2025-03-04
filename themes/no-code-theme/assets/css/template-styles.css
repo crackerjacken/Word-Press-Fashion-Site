@@ -62,4 +62,15 @@
     padding: 5px 0;
 }
 
+.single_add_to_cart_button {
+    background-color: #0f0142 !important;
+    border-radius: 10px;
+}
 
+.quantity .input-text.qty {
+    border: 2px solid #000 !important;
+    border-radius: 5px !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    text-align: center !important;
+}

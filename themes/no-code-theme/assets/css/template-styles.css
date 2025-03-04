@@ -55,11 +55,12 @@
 }
 
 .block-editor-block-list__block.wp-block.woocommerce.wc-block-breadcrumbs.has-small-font-size.alignwide.wp-block-woocommerce-breadcrumbs {
-    font-size: 14px;
+    font-size: 1.5rem !important;
     color: #ff0000;
     text-transform: uppercase;
     margin-bottom: 10px;
     padding: 5px 0;
+    margin-left: 4vw !important;
 }
 
 .single_add_to_cart_button {
@@ -75,4 +76,22 @@
     text-align: center !important;
 }
 
+.woocommerce-Tabs-panel.woocommerce-Tabs-panel--description.panel.entry-content.wc-tab h2{
+    margin-left: 5vh !important;
+}
 
+
+.description_tab:focus,
+.reviews_tab:focus {
+    background-color: #0f0142 !important;
+    color: white !important;
+}
+
+.woocommerce-breadcrumb {
+    font-size: 1.5rem;
+    color: #ff0000;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding: 5px 0;
+    margin-left: 4vw !important;
+}

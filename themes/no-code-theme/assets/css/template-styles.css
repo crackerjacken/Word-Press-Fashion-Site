@@ -117,3 +117,15 @@
 .woocommerce p.stars a {
     color: orangered;
 }
+
+.woocommerce-Price-currencySymbol {
+    color: #ff0000;
+}
+
+.woocommerce-Price-amount .amount {
+    color: red;
+}
+
+.description_tab h2 {
+    margin-left: 1.5vw;
+}

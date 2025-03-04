@@ -19,3 +19,12 @@
     width: auto;
     padding-bottom: 7vh;
 }
+
+.wp-block-post-template {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    width: 90%;
+    margin: auto;
+}
+

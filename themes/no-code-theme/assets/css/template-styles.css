@@ -144,3 +144,16 @@
     width: 95vw;
     margin: auto !important;
 }
+
+.block-editor-block-list__layout .wc-block-product {
+    border: 2px solid red;
+}
+
+.editor-styles-wrapper ul.wc-block-product-template {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    width: 90vw;
+    margin: auto !important;
+    margin-bottom: 5vh !important;
+}

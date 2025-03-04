@@ -95,3 +95,25 @@
     padding: 5px 0;
     margin-left: 4vw !important;
 }
+
+.woocommerce span.onsale {
+    background-color: var(--wp--preset--color--foreground,#0f0142);
+    color: var(--wp--preset--color--background,#fff);
+    width: 10vw !important;
+    border-radius: 0;
+}
+
+#reviews #comments h2 {
+    clear: none;
+    margin-left: 3vw;
+}
+
+.woocommerce-Reviews .comment-reply-title {
+    font-size: var(--wp--preset--font-size--medium);
+    font-weight: 700;
+    margin-left: 3vw;
+}
+
+.woocommerce p.stars a {
+    color: orangered;
+}

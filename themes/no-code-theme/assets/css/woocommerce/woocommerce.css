@@ -730,6 +730,47 @@ table.wc-block-cart-items .wc-block-cart-items__row .wc-block-components-product
         margin: 0% !important;
         padding: 0% !important;
     }
+
+    /* Make checkout block full-width on page ID 167 */
+    .page-id-167 .wp-block-woocommerce-checkout.alignwide.wc-block-checkout {
+        width: 100vw !important;
+    }
+
+    /* Sidebar styles inside checkout on tablets (page ID 167) */
+    .page-id-167 .wc-block-components-sidebar {
+        box-sizing: border-box;
+        margin-top: 8px;
+        padding-left: 2.2641509434%; /* Relative padding for layout */
+        width: 35%; /* Take 35% of horizontal space */
+    }
+
+    /* Main checkout section next to sidebar (page ID 167) */
+    .page-id-167 .wc-block-components-sidebar-layout .wc-block-components-main {
+        box-sizing: border-box;
+        margin: 0;
+        padding-right: 4.5283018868%;
+        width: 65%; /* Remaining space beside sidebar */
+        padding: 0vh !important; /* Reset padding */
+    }
+
+    /* Shift checkout form slightly to the right on page ID 167 */
+    .page-id-167 .wc-block-components-form.wc-block-checkout__form {
+        margin-left: 3vw !important;
+    }
+
+    /* Add margin and border to order summary on tablet checkout */
+    .page-id-167 .wp-block-woocommerce-checkout-order-summary-block {
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 3%;
+        margin-right: 3vw;
+    }
+
+    /* Remove extra padding in the order summary layout */
+    .page-id-167 .wc-block-components-order-summary.is-large {
+        padding: 0;
+    }
+
 }
 
 

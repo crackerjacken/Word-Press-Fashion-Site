@@ -23,12 +23,17 @@ add_action('enqueue_block_editor_assets', 'fashion_theme_enqueue_block_editor_as
 function fashion_theme_enqueue_block_assets() {
     wp_enqueue_style(
         'fashion-theme-block-styles',
-        get_theme_file_uri('assets/css/block-styles.css'),
+        get_theme_file_uri('assets/css/block-styles.css')
     );
 
     wp_enqueue_style(
-        'fashion-theme-template-styles',
-        get_theme_file_uri('assets/css/template-styles.css'),
+        'fashion-theme-woocommerce',
+        get_theme_file_uri('assets/css/woocommerce/woocommerce.css')
+    );
+
+    wp_enqueue_style(
+        'fashion-theme-myaccount',
+        get_theme_file_uri('assets/css/woocommerce/my-account.css')
     );
 }
 add_action('enqueue_block_assets', 'fashion_theme_enqueue_block_assets');

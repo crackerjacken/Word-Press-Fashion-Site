@@ -1,0 +1,614 @@
+/* Sidebar navigation container */
+.woocommerce-MyAccount-navigation {
+    background-color: #ffffff !important; /* White background */
+    padding: 0 !important;
+    width: 280px !important; /* Fixed sidebar width */
+    min-height: 80vh !important; /* Minimum vertical height */
+    display: flex !important;
+    flex-direction: column !important; /* Stack menu items vertically */
+    justify-content: flex-start !important; /* Align to top */
+    align-items: flex-start !important; /* Align to left */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1) !important; /* Soft right shadow */
+    border-right: 1px solid #7d7d7d !important; /* Right separator line */
+    position: fixed; /* Keep sidebar fixed while scrolling */
+    top: 0vh;
+    padding-top: 20vh !important; /* Push nav links downward for spacing */
+}
+
+/* Main content area on the account page */
+.woocommerce-MyAccount-content {
+    flex: 1 !important; /* Let it grow within flex parent */
+    padding: 30px !important;
+    background-color: #f8f8f8 !important; /* Light grey background */
+    border-radius: 10px !important; /* Rounded corners */
+    min-height: 100vh !important; /* Full vertical height */
+}
+
+/* Overall layout for the My Account page */
+.woocommerce-MyAccount-page {
+    display: flex !important; /* Flex container for sidebar + content */
+    flex-direction: row !important; /* Side-by-side layout */
+    gap: 20px !important; /* Space between sidebar and content */
+}
+
+/* Unordered list for account navigation links */
+.woocommerce-MyAccount-navigation ul {
+    list-style: none !important; /* Remove bullet points */
+    padding: 0 !important;
+    width: 100% !important; /* Full width inside sidebar */
+}
+
+/* Style for each individual navigation link */
+.woocommerce-MyAccount-navigation-link {
+    display: block !important;
+    padding: 15px 20px !important; /* Spacing inside buttons */
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    color: #000000 !important; /* Black text */
+    text-decoration: none !important;
+    border-bottom: 1px solid #a8a8a8 !important; /* Light separator line */
+    transition: all 0.3s ease-in-out !important; /* Smooth hover effects */
+    width: 84%; /* Custom width inside nav */
+    background-color: white;
+}
+
+/* Hover effect for navigation links */
+.woocommerce-MyAccount-navigation-link:hover {
+    background-color: #dcdcdc !important; /* Light grey hover */
+    color: #000000 !important;
+    font-weight: bold !important;
+    transform: scale(1.05) !important; /* Slight zoom */
+}
+
+/* Style for the active/current link */
+.woocommerce-MyAccount-navigation-link.is-active {
+    background-color: #0f0142 !important; /* Deep blue active tab */
+    color: #ffffff !important; /* White text */
+    font-weight: bold !important;
+    transform: scale(1.05) !important;
+}
+
+/* Special style for the logout link */
+.woocommerce-MyAccount-navigation-link--customer-logout {
+    color: white !important; /* Keep text white (likely on dark bg) */
+}
+
+/* Remove margin from template parts (likely to fix layout spacing) */
+.wp-block-template-part {
+    margin: 0 !important;
+}
+
+/* Position the My Account content to the right of the sidebar */
+.woocommerce-account .woocommerce-MyAccount-content {
+    float: right;
+    width: 72vw !important; /* Occupies most of the screen */
+    margin: auto !important;
+}
+
+
+/* Style main account content area */
+.woocommerce-MyAccount-content {
+    flex: 1 !important; /* Allow it to fill available space */
+    padding: 30px !important; /* Internal spacing */
+    background-color: #ffffff !important; /* White background */
+    min-height: 87vh !important; /* Minimum height to nearly fill screen */
+}
+
+/* Style all anchor tags that are NOT buttons */
+a:where(:not(.wp-element-button)) {
+    font-family: dmserif; /* Custom serif font */
+    color: white; /* White text by default */
+}
+
+/* Highlight active navigation link in sidebar */
+.woocommerce-account .woocommerce-MyAccount-navigation li.is-active a {
+    color: rgb(255, 255, 255) !important; /* Force white text */
+    text-decoration: none !important; /* Remove underline */
+}
+
+/* Default link color in My Account nav (non-active) */
+.woocommerce-account .woocommerce-MyAccount-navigation li a {
+    color: black;
+}
+
+/* Paragraph text inside My Account content */
+.woocommerce-MyAccount-content p {
+    color: #000000 !important; /* Black text */
+    font-family: dmserif !important; /* Serif font for elegance */
+    font-weight: bolder !important;
+    font-size: 2rem !important;
+}
+
+/* Style links inside the My Account content area */
+.woocommerce-MyAccount-content a {
+    color: #ff0000 !important; /* Bright red links for contrast */
+}
+
+/* Info banners used by WooCommerce blocks */
+.wc-block-components-notice-banner.is-info {
+    background-color: #001539; /* Deep navy blue */
+    border-color: #ff0000; /* Bright red border */
+    color: white; /* White text */
+}
+
+/* Icon background inside notice banner */
+.wc-block-components-notice-banner.is-info > svg {
+    background-color: #d32f2f !important; /* Red background on icon */
+}
+
+/* "Continue" or action links in notice banners */
+.wc-block-components-notice-banner > .wc-block-components-notice-banner__content .wc-forward {
+    color: #ffffff !important; /* White links */
+    font-weight: bold !important;
+    text-transform: uppercase !important; /* All caps */
+}
+
+/* Two-column WooCommerce forms (e.g. Billing/Shipping) */
+.woocommerce .col2-set,
+.woocommerce-page .col2-set {
+    width: 100% !important; /* Full width layout */
+    display: flex !important;
+    flex-direction: column !important; /* Stack fields vertically */
+    gap: 20px !important; /* Space between columns */
+    align-items: center !important; /* Centered within container */
+}
+
+/* Address blocks in the account dashboard (billing/shipping) */
+.woocommerce-Address {
+    background-color: #ffffff !important;
+    border: 2px solid #000000 !important; /* Black border */
+    border-radius: 8px !important; /* Rounded edges */
+    padding: 30px !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important; /* Soft shadow */
+    width: 90% !important;
+    max-width: 900px !important;
+    transition: all 0.3s ease-in-out !important; /* Smooth hover/animation */
+    margin: 0 auto !important; /* Center horizontally */
+}
+/* Billing Address block */
+.u-column1.col-1.woocommerce-Address {
+    background-color: #f5f5f5 !important; /* Light grey background */
+}
+
+/* Shipping Address block */
+.u-column2.col-2.woocommerce-Address {
+    background-color: #eaeaea !important; /* Slightly darker grey */
+}
+
+/* Hover effect for both address columns */
+.u-column1.col-1.woocommerce-Address:hover,
+.u-column2.col-2.woocommerce-Address:hover {
+    background-color: #dcdcdc !important; /* Darker grey on hover */
+    border-color: #ff0000 !important; /* Red border on hover */
+    transform: scale(1.02) !important; /* Slight zoom effect */
+}
+
+/* Address section title styling */
+.woocommerce-Address-title {
+    font-size: 1.8rem !important;
+    font-weight: bold !important;
+    margin-bottom: 15px !important;
+}
+
+/* Address text styles */
+.woocommerce-Address address {
+    font-size: 1.2rem !important;
+    color: #333 !important;
+    line-height: 1.5 !important;
+    text-align: left !important; /* Override earlier center alignment */
+}
+
+/* Links inside address block (e.g. "Edit") */
+.woocommerce-Address a {
+    font-size: 1.2rem !important;
+    font-weight: bold !important;
+    color: #ff0000 !important; /* Bright red for high contrast */
+    text-decoration: none !important;
+}
+
+/* Hover effect for address links */
+.woocommerce-Address a:hover {
+    text-decoration: underline !important; /* Show underline on hover */
+}
+
+/* Remove float from "Edit" button beside address title */
+.woocommerce-account .addresses .title .edit {
+    float: none !important;
+}
+
+/* Make template parts (e.g., site header) sticky */
+.wp-block-template-part {
+    position: sticky !important; /* Sticks to top when scrolling */
+    top: 0 !important;
+    z-index: 1000 !important; /* High stacking order */
+    background-color: var(--wp--preset--color--primary, #090045) !important; /* Use theme color or fallback */
+    padding: 15px 20px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important; /* Soft drop shadow */
+}
+
+/* Styling for Lost Password link container (custom selector) */
+LostPassword a {
+    text-decoration: none !important;
+    font-weight: bold !important;
+    display: block !important;
+    margin-top: 15px !important;
+}
+
+/* General post content (used for Lost Password message likely) */
+.wp-block-post-content.wp-block-post-content {
+    font-weight: bolder;
+    font-family: dmserif;
+    font-size: 1.5rem;
+    color: #000000;
+    text-align: center;
+}
+
+/* Layout styling for WooCommerce's lost password form */
+.woocommerce-LostPassword {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 15px !important;
+    font-size: 1.4rem !important;
+}
+
+/* Styling for the actual Lost Password anchor link */
+.woocommerce-LostPassword a {
+    font-size: 1.2rem !important;
+    font-weight: bold !important;
+    color: #090045 !important; /* Deep blue */
+    text-decoration: none !important;
+    transition: all 0.3s ease-in-out !important; /* Smooth hover transition */
+}
+/* Hover effect for Lost Password link */
+.woocommerce-LostPassword a:hover {
+    text-decoration: underline !important; /* Add underline on hover */
+    color: #d32f2f !important; /* Bright red hover color */
+}
+
+/* General button styling across site (including Woo buttons) */
+button.wp-element-button {
+    background-color: #090045 !important; /* Deep blue background */
+    color: white !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    padding: 12px 20px !important;
+    border: none !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease-in-out !important; /* Smooth hover/active transitions */
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-width: 160px !important;
+    max-width: 300px !important;
+    text-align: center !important;
+    box-shadow: 0 4px 8px rgba(9, 0, 69, 0.4) !important;
+}
+
+/* Hover state for buttons */
+button.wp-element-button:hover {
+    background-color: #d32f2f !important; /* Red background on hover */
+    color: white !important;
+    box-shadow: 0 4px 12px rgba(211, 47, 47, 0.4) !important;
+    transform: scale(1.02) !important; /* Slight zoom on hover */
+}
+
+/* Active (pressed) button state */
+button.wp-element-button:active {
+    transform: scale(0.98) !important; /* Slight shrink */
+    box-shadow: 0 3px 6px rgba(9, 0, 69, 0.3) !important;
+}
+
+/* Disabled state for buttons */
+button.wp-element-button:disabled {
+    background-color: #7d7d7d !important; /* Gray background */
+    color: white !important;
+    cursor: not-allowed !important;
+    opacity: 0.6 !important;
+    box-shadow: none !important;
+}
+
+/* General post content styling (affects login titles/content) */
+.wp-block-post-content.wp-block-post-content {
+    font-weight: bolder;
+    font-family: dmserif;
+    font-size: 1.5rem;
+    color: #ff0000;
+}
+
+/* Input + select + textarea fields across WooCommerce forms */
+.woocommerce-page form .form-row input.input-text,
+.woocommerce-page form .form-row select,
+.woocommerce-page form .form-row textarea.input-text {
+    font-size: 1.2rem !important;
+    color: #00112e; /* Deep blue text */
+}
+
+/* Container for WooCommerce login form */
+.woocommerce-form-login {
+    max-width: 420px !important;
+    margin: 50px auto !important;
+    background: #ffffff !important;
+    padding: 30px !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    border: 1px solid #ddd !important;
+    text-align: center !important;
+    display: block !important;
+}
+
+/* Title inside login form */
+.woocommerce-form-login h2 {
+    font-family: dmserif !important;
+    font-size: 2rem !important;
+    font-weight: bold !important;
+    color: #090045 !important; /* Match your brand/nav color */
+    text-align: center !important;
+    margin-bottom: 20px !important;
+}
+
+/* Label styling inside login form */
+.woocommerce-form-login label {
+    font-size: 1rem !important;
+    font-weight: bold !important;
+    color: #090045 !important;
+    display: block !important;
+    text-align: left !important;
+    margin-bottom: 6px !important;
+}
+
+/* Text + password inputs inside login form */
+.woocommerce-form-login input[type="text"],
+.woocommerce-form-login input[type="password"] {
+    width: 100% !important;
+    padding: 12px !important;
+    border: 2px solid #ccc !important;
+    border-radius: 6px !important;
+    font-size: 16px !important;
+    margin-bottom: 15px !important;
+    transition: border 0.3s ease-in-out !important;
+    background: white !important;
+    color: black !important;
+}
+
+/* Add extra space inside password field (e.g. for show/hide icon) */
+.woocommerce-form-login input[type="password"] {
+    position: relative !important;
+    padding-right: 40px !important;
+}
+
+/* Container wrapper for password field (for show/hide toggle) */
+.woocommerce-form-login .password-input {
+    position: relative !important;
+    width: 100% !important;
+}
+/* Eye icon or similar on password field (pseudo-element placement) */
+.woocommerce-form-login .password-input::after {
+    position: absolute !important;
+    right: 12px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    cursor: pointer !important;
+    font-size: 1.2rem !important;
+    color: #090045 !important; /* Deep blue */
+}
+
+/* "Remember me" checkbox layout */
+.woocommerce-form-login .woocommerce-form__label-for-checkbox {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 8px !important;
+    margin-top: 10px !important;
+}
+
+/* Login submit button */
+.woocommerce-form-login button {
+    width: 10% !important; /* Likely should be larger, adjust as needed */
+    background-color: #090045 !important;
+    color: white !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    padding: 12px !important;
+    border: none !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease-in-out !important;
+    text-transform: uppercase !important;
+    box-shadow: 0 4px 8px rgba(9, 0, 69, 0.4) !important;
+}
+
+/* Hover state for login button */
+.woocommerce-form-login button:hover {
+    background-color: #d32f2f !important;
+}
+
+/* Lost password link below login form */
+.woocommerce-LostPassword a {
+    color: #090045 !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    display: block !important;
+    margin-top: 15px !important;
+    font-size: 1rem !important;
+}
+
+/* Hover state for Lost Password link */
+.woocommerce-LostPassword a:hover {
+    text-decoration: underline !important;
+}
+
+/* Paragraph spacing inside login form */
+.woocommerce-form-login p {
+    margin-bottom: 15px !important;
+}
+
+/* WooCommerce "show password" icon positioning fix */
+.woocommerce form .show-password-input,
+.woocommerce-page form .show-password-input {
+    top: 25px !important;
+    right: 0 !important;
+}
+
+/* Center and enlarge Lost Password heading */
+.woocommerce-LostPassword .lost_password {
+    text-align: center !important;
+    font-size: 4rem !important; /* Fixed spacing issue with "4 rem" */
+}
+
+/* Make login submit button centered and block-level */
+.woocommerce .woocommerce-form-login .woocommerce-form-login__submit {
+    float: none !important;
+    margin: auto !important;
+    display: block !important;
+}
+
+/* Label style inside form rows */
+.woocommerce form .form-row label {
+    line-height: 2;
+    font-family: dmserif;
+    font-size: 1.4rem !important;
+}
+
+/* Container styling for Reset Password form */
+.woocommerce-ResetPassword {
+    max-width: 420px !important;
+    margin: 50px auto !important;
+    background: #ffffff !important;
+    padding: 30px !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    border: 1px solid #ddd !important;
+    text-align: center !important;
+    margin-bottom: 13vh !important;
+}
+
+/* Paragraph styling in reset form */
+.woocommerce-ResetPassword .lost_reset_password p {
+    display: inline-block !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: black !important;
+}
+
+/* Fix layout padding/margin inside first column of reset form */
+.woocommerce-form-row .woocommerce-form-row--first .form-row .form-row-first {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* General form row styling */
+.woocommerce form .form-row {
+    padding: 3px;
+    margin: 0 0 6px;
+    text-align: left;
+    color: black !important;
+}
+
+/* Fix button alignment and layout */
+.woocommerce-Button .button .wp-element-button {
+    margin: auto !important;
+    display: block !important;
+    float: none !important;
+}
+
+@media (max-width: 768px) {
+
+    /* Reduce font size in WooCommerce banner content */
+    .wc-block-components-notice-banner__content {
+        font-size: 1rem !important;
+    }
+
+    /* Apply excessive right padding (might be a layout bug?) */
+    button.wc-forward.wp-element-button {
+        padding-right: 100vh !important; /* ⚠️ Consider reducing this — seems extreme */
+    }
+
+    /* Adjust "Continue shopping" / "Dismiss" button in banner */
+    .wc-block-components-notice-banner > .wc-block-components-notice-banner__content .wc-forward {
+        padding-right: 8.5vh !important;
+        font-size: 0.8rem !important;
+    }
+
+    /* Stack form fields on top of each other and widen */
+    .woocommerce form .form-row-first,
+    .woocommerce form .form-row-last,
+    .woocommerce-page form .form-row-first,
+    .woocommerce-page form .form-row-last {
+        width: 96% !important;
+    }
+
+    /* Display name field description font size */
+    #account_display_name_description {
+        font-size: 1rem !important;
+    }
+
+    /* Reduce address card width on mobile */
+    .u-column1.col-1.woocommerce-Address {
+        width: 80% !important;
+    }
+
+    /* Shrink h2 titles in billing address section */
+    .u-column1.col-1.woocommerce-Address h2 {
+        font-size: 1.3rem !important;
+    }
+
+    /* Same for shipping address */
+    .u-column2.col-2.woocommerce-Address {
+        width: 80% !important;
+    }
+
+    .u-column2.col-2.woocommerce-Address h2 {
+        font-size: 1.3rem !important;
+    }
+
+    /* Shrink paragraph text in account content on mobile */
+    .woocommerce-MyAccount-content p {
+        font-size: 1rem !important;
+        text-align: left !important;
+        width: 30vw !important;
+        margin: auto !important;
+    }
+
+    /* Remove padding from h2 titles inside post content blocks */
+    .entry-content.wp-block-post-content.is-layout-flow.wp-container-core-post-content-is-layout-1.wp-block-post-content-is-layout-flow h2 {
+        padding: 0% !important;
+    }
+
+    /* Constrain post title height in archive pages */
+    .archive .wp-block-post-title.has-text-align-center.has-primary-color.has-medium-font-size.has-dm-serif-font-family {
+        height: 5vh;
+    }
+
+    /* Shrink and center My Account content for mobile */
+    .woocommerce-account .woocommerce-MyAccount-content {
+        float: right !important;
+        width: 55% !important;
+        margin: auto !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    /* Restrict post title height in archive pages */
+    .archive .wp-block-post-title.has-text-align-center.has-primary-color.has-medium-font-size.has-dm-serif-font-family {
+        height: 5vh;
+    }
+
+    /* Adjust account content width on tablets */
+    .woocommerce-account .woocommerce-MyAccount-content {
+        float: right !important;
+        width: 66% !important;
+    }
+
+    /* Larger paragraph font for better readability on tablets */
+    .woocommerce-MyAccount-content p {
+        font-size: 1.4rem !important;
+        text-align: left !important;
+        width: 40vw !important;
+        margin: auto !important;
+    }
+}

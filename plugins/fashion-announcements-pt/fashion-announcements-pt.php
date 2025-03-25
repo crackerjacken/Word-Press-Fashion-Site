@@ -60,7 +60,7 @@ function fash_announcements_pt() {
         'menu_icon'             => 'dashicons-megaphone',
         'capability_type'       => 'post',
         'supports'              => array('title', 'editor', 'revisions'),
-        'has_archive'           => true,
+        'has_archive'           => false,
         'rewrite'               => array('slug' => 'announcement')
     );
 

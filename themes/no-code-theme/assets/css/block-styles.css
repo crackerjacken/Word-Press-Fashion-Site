@@ -1,4 +1,236 @@
+/* Adds a ">" icon to icon-style buttons */
 .wp-block-buttons .wp-block-button.is-style-icon .wp-block-button__link::after {
-    content: '>';
-    margin-left: 10px;
+    content: '>'; /* Adds arrow after text */
+    margin-left: 10px; /* Spacing between text and icon */
 }
+
+/* Query Loop (Post Grid) Layout */
+.wp-block-query-loop {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr); /* 3-column grid layout */
+    gap: 5px; /* Spacing between posts */
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto; /* Center grid */
+}
+
+/* Individual Post Container */
+.wp-block-post {
+    display: flex !important;
+    flex-direction: column; /* Stack post elements vertically */
+    justify-content: space-between; /* Space out elements inside post */
+    padding: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border: 1px solid black; /* Override with solid black border */
+    background: #fff;
+    width: auto;
+    padding-bottom: 7vh; /* Add vertical breathing room */
+}
+
+/* Grid layout for post template block (inside Query Loop) */
+.wp-block-post-template {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr); /* 3-column layout */
+    gap: 5px;
+    width: 90%;
+    margin: auto;
+}
+
+/* Reset list styles for post list in editor */
+.editor-styles-wrapper ul.wp-block-post-template {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    width: 90vw;
+    margin: auto;
+}
+
+/* Remove margin from first child in flow layout */
+:root :where(.is-layout-flow) > :first-child {
+    margin-block-start: 0;
+}
+
+/* Add vertical spacing above a specific post (ID 305) */
+.wp-block-post.post-305.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-uncategorized {
+    margin-top: 2.8vh !important;
+}
+
+/* Post title styling — centered with spacing */
+.wp-block-post-title.has-x-large-font-size {
+    padding-right: 0;
+    padding-left: 0vw;
+    margin-right: var(--wp--preset--spacing--80);
+    margin-left: var(--wp--preset--spacing--80);
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+/* General paragraph styling throughout site */
+:root :where(p) {
+    color: var(--wp--preset--color--secondary); /* Theme's secondary color */
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+    padding-top: 1.25rem;
+    padding-right: 0vw !important;
+    padding-bottom: 1.25rem;
+    padding-left: 0vw !important;
+    font-family: var(--wp--preset--font-family--sofia-sans); /* Modern sans serif font */
+    font-size: 1.5rem;
+}
+
+/* Universal button style */
+button.wp-element-button {
+    background-color: #090045 !important; /* Deep navy blue */
+    color: white !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    padding: 12px 20px !important;
+    border: none !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease-in-out !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-width: 160px !important;
+    max-width: 300px !important;
+    text-align: center !important;
+    box-shadow: 0 4px 8px rgba(9, 0, 69, 0.4) !important;
+    margin: auto;
+    margin-left: 8vw; /* Push button slightly right */
+}
+
+/* Custom block with white text, monospace font, and fixed height */
+.has-white-color.has-text-color.has-link-color.has-sometype-mono-font-family.wp-elements-483361a4c574cd22dd7063af05ac54e3 {
+    height: 64vh !important; /* Fixed height block */
+}
+/* Constrain full-width group block to 90% of viewport width */
+.wp-block-group.alignfull.has-global-padding.is-layout-constrained.wp-container-core-group-is-layout-9.wp-block-group-is-layout-constrained {
+    width: 90vw !important;
+    margin: auto !important;
+}
+
+/* Base text styling for centered black text with Sofia Sans font */
+.has-black-color.has-text-color.has-link-color.has-sofia-sans-font-family.wp-elements-d42084a639e72d42acf577410862108b {
+    font-family: var(--wp--preset--font-family--sofia-sans, sans-serif) !important;
+    font-size: 1.2rem !important;
+    font-weight: 500 !important;
+    color: var(--wp--preset--color--foreground, black) !important;
+    line-height: 1.6 !important;
+    text-align: center !important;
+    text-decoration: none !important;
+}
+
+/* Left-align all paragraphs inside a vertically stacked flex group */
+.wp-block-group.alignfull.is-vertical.is-content-justification-left.is-nowrap.is-layout-flex.wp-container-core-group-is-layout-8.wp-block-group-is-layout-flex p {
+    padding-left: 4% !important;
+    text-align: left !important;
+}
+
+/* Left-align specific DM Serif styled text blocks */
+.has-black-color.has-text-color.has-link-color.has-dm-serif-font-family.wp-elements-73f3082395a415d845fa2a61487097f9,
+.has-black-color.has-text-color.has-link-color.has-dm-serif-font-family.wp-elements-9f08f3db56a86e06a0b0fb37a60e83a7 {
+    text-align: left !important;
+}
+
+/* Left-align multiple heading blocks with DM Serif font and white color */
+.has-black-color.has-text-color.has-link-color.has-dm-serif-font-family.wp-elements-e504dc6091894b0b08e715760ddca29a,
+.wp-block-heading.heading-input-label-gutena.has-white-color.has-text-color.has-link-color.has-dm-serif-font-family.wp-elements-f4e67c423cd60e7820e0454fadf91e50,
+.wp-block-heading.heading-input-label-gutena.has-white-color.has-text-color.has-link-color.has-dm-serif-font-family.wp-elements-7bc57715dbfd694daa0974340b65c7d7,
+.wp-block-heading.heading-input-label-gutena.has-white-color.has-text-color.has-link-color.has-dm-serif-font-family.wp-elements-31d3a5f26a7398d831bf4ac9b3d720fa {
+    text-align: left !important;
+}
+
+/* Override link color in post titles */
+.wp-block-post-title a {
+    color: #ff0000 !important;
+}
+
+/* Center large DM Serif titles */
+.has-primary-color.has-text-color.has-link-color.has-dm-serif-font-family.has-large-font-size.wp-elements-86c2a1086b6ff454c3096495c87f1aac {
+    text-align: center !important;
+}
+
+/* Style post title block (full-width hero look) */
+.alignwide.wp-block-post-title {
+    font-size: 2.5rem !important;
+    font-weight: bold !important;
+    font-family: 'DM Serif Display', serif !important;
+    color: white !important;
+    background-color: #090045 !important; /* Dark navy bg */
+    width: 100vw !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 20px !important;
+    line-height: 1.3 !important;
+    border-radius: 0 !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+    padding-left: 5vw !important;
+    margin-bottom: 5vh !important;
+}
+
+/* Style for white-background buttons with primary-colored text */
+.wp-block-button__link.has-primary-color.has-white-background-color.has-text-color.has-background.has-link-color.wp-element-button {
+    background-color: white !important;
+    color: #090045 !important;
+    font-size: 1.2rem !important;
+    font-weight: bold !important;
+}
+
+/* Gutena Forms block: align submission error message text to left */
+.wp-block-gutena-forms.gutena-forms-contact-form.gutena_forms_ID_48b549fa3f8_11220256252.after_submit_message.is-layout-flow.wp-container-gutena-forms-is-layout-1.wp-block-forms-is-layout-flow.display-error-message p {
+    text-align: left !important;
+}
+
+/* Large section block with black background and constrained layout */
+.wp-block-group.has-black-background-color.has-background.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained {
+    margin-top: 6vh !important;
+    height: 92vh !important; /* Nearly full screen height */
+}
+
+/* Featured post image height control */
+.has-border-color.has-white-border-color.wp-post-image {
+    height: 37vh !important; /* Fix image height for visual consistency */
+}
+
+/* Left padding for inner blocks in layout (root container override) */
+.block-editor-block-list__layout.is-root-container > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+    padding-left: 2vw !important;
+}
+
+/* Padding on paragraphs in post content block */
+.entry-content.wp-block-post-content.is-layout-flow.wp-container-core-post-content-is-layout-1.wp-block-post-content-is-layout-flow p {
+    padding-left: 2vw !important;
+}
+
+/* Left padding on h2 inside post content */
+.entry-content.wp-block-post-content.is-layout-flow.wp-container-core-post-content-is-layout-1.wp-block-post-content-is-layout-flow h2 {
+    padding-left: 2vw !important;
+}
+
+/* Adjust top spacing of post content wrapper */
+.wp-block-post-content.wp-block-post-content {
+    margin-top: -3vh !important; /* Pull content upward slightly */
+}
+
+/* Remove horizontal padding from column block layout */
+.wp-block-columns.alignwide.is-layout-flex.wp-container-core-columns-is-layout-1.wp-block-columns-is-layout-flex {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Custom width for Group block #8 */
+.wp-block-group.alignwide.is-content-justification-space-between.is-layout-flex.wp-container-core-group-is-layout-8.wp-block-group-is-layout-flex {
+    width: 85vw !important;
+}
+
+/* Custom width for the main post content block */
+.entry-content.alignwide.wp-block-post-content.is-layout-flow.wp-container-core-post-content-is-layout-1.wp-block-post-content-is-layout-flow {
+    width: 95vw;
+}
+
+
+

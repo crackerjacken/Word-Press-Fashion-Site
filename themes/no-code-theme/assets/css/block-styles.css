@@ -890,7 +890,92 @@ button.wp-element-button {
         padding: 0% !important;
     }
 
+    /* Removes vertical spacing from blog post query and its list */
+    .blog .wp-block-query.is-layout-flow.wp-block-query-is-layout-flow {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+    .blog .wp-block-query.is-layout-flow.wp-block-query-is-layout-flow ul {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
 
+    /* Spacer block cleanup — no space above */
+    .blog .wp-block-spacer {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    /* HEADER & FOOTER GROUPS — Core layout, centered content */
+
+    /* Top header/footer flex group with center alignment and spacing */
+    .block-editor-block-list__block.wp-block.alignwide.wp-block-group.block-editor-block-list__layout.wp-container-core-group-is-layout-1.is-layout-flex.wp-block-group-is-layout-flex.is-content-justification-space-between {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 1.5rem;
+        padding: 2rem;
+        flex-wrap: wrap;
+        padding: 0 !important; /* overrides previous padding */
+    }
+
+    /* Footer-like flex group with same structure */
+    .wp-block-group.alignwide.is-content-justification-space-between.is-layout-flex.wp-container-core-group-is-layout-3.wp-block-group-is-layout-flex {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 1.5rem;
+        padding: 2rem;
+        flex-wrap: wrap;
+        padding: 0 !important; /* overrides again */
+    }
+
+    /* Final footer block: just centering and flex */
+    .wp-block-group.alignwide.is-content-justification-space-between.is-layout-flex.wp-container-core-group-is-layout-16.wp-block-group-is-layout-flex {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    /* Shared layout group for centered flex container — ID: 17 */
+    .wp-block-group.alignwide.is-content-justification-space-between.is-layout-flex.wp-container-core-group-is-layout-17.wp-block-group-is-layout-flex {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 74vw !important;
+    }
+
+    /* Same layout config — for layout ID: 11 */
+    .wp-block-group.alignwide.is-content-justification-space-between.is-layout-flex.wp-container-core-group-is-layout-11.wp-block-group-is-layout-flex {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 74vw !important;
+    }
+
+    /* Same layout config — for layout ID: 6 */
+    .wp-block-group.alignwide.is-content-justification-space-between.is-layout-flex.wp-container-core-group-is-layout-6.wp-block-group-is-layout-flex {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 74vw !important;
+    }
+
+    /* Same layout config — for layout ID: 7 */
+    .wp-block-group.alignwide.is-content-justification-space-between.is-layout-flex.wp-container-core-group-is-layout-7.wp-block-group-is-layout-flex {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 74vw !important;
+    }
+
+    /* Same layout config — for layout ID: 8 */
+    .wp-block-group.alignwide.is-content-justification-space-between.is-layout-flex.wp-container-core-group-is-layout-8.wp-block-group-is-layout-flex {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 80vw !important;
+    }
         
 }  
 

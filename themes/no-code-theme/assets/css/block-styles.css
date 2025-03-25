@@ -310,7 +310,303 @@ button.wp-element-button {
         padding: 0% !important;
     }
 
+    /* Tightly constrain this serif font column */
+    .home .wp-block-column.has-dm-serif-font-family.is-layout-flow.wp-block-column-is-layout-flow {
+        width: 3vw !important;
+        margin: 0% !important;
+        padding: 0% !important;
+    }
 
+    /* Responsive override for specific column inside columns block */
+    .home .wp-block-columns.is-layout-flex.wp-container-core-columns-is-layout-1.wp-block-columns-is-layout-flex .wp-block-column.is-layout-flow.wp-block-column-is-layout-flow {
+        flex-basis: 40% !important; /* Each column takes up 40% */
+    }
+
+    /* Override layout and spacing for another group block */
+    .home .wp-container-core-group-is-layout-14 {
+        margin: 0% !important;
+        padding: 0% !important;
+        flex-direction: row !important;
+    }
+
+       /* Center-aligned mono font section on homepage with inner padding */
+       .home .has-text-align-center.has-black-color.has-sometype-mono-font-family {
+        padding: 0 2% !important;
+    }
+
+    /* Full-width columns block on homepage with padding and flex row layout */
+    .home .wp-block-columns.is-layout-flex.wp-container-core-columns-is-layout-2.wp-block-columns-is-layout-flex {
+        padding: 2vw !important;
+        display: flex;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        width: 100vw !important;
+        margin-top: 0 !important;
+    }
+
+    /* Bottom spacing for another set of homepage columns */
+    .home .wp-block-columns.is-layout-flex.wp-container-core-columns-is-layout-1.wp-block-columns-is-layout-flex {
+        margin-bottom: 10vh;
+    }
+
+    /* Responsive override: columns should stack on mobile (flex-basis control) */
+    .home .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column {
+        flex-basis: 40% !important;
+    }
+
+    /* Set general width of column blocks on homepage */
+    .home .wp-block-column.is-layout-flow.wp-block-column-is-layout-flow {
+        width: 60vw !important;
+    }
+
+    /* Page ID 35 custom layout override — flex column with no padding/margin */
+    .page-id-35 .wp-block-column.is-layout-flow.wp-block-column-is-layout-flow {
+        display: flex !important;
+        flex-direction: row !important;
+        margin: 0% !important;
+        padding: 0% !important;
+    }
+
+    /* Group block on page 35 with custom border-radius and layout */
+    .page-id-35 .wp-block-group.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained {
+        border-radius: 12px;
+        width: 90vw !important;
+        margin: 0 auto !important;
+        padding: 0% !important;
+    }
+
+    /* Make images inside that group full width with no spacing */
+    .page-id-35 .wp-block-group.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained figure {
+        width: 100% !important;
+        margin: 0% !important;
+        padding: 0% !important;
+    }
+
+    /* Stack layout columns vertically on page 35 */
+    .page-id-35 .wp-block-columns.is-layout-flex.wp-container-core-columns-is-layout-4.wp-block-columns-is-layout-flex {
+        display: flex !important;
+        flex-direction: column !important;
+        margin: 0% !important;
+        padding: 0% !important;
+    }
+
+    /* Ensure individual column blocks don’t wrap inside column layout */
+    .page-id-35 .wp-block-column.is-layout-flow.wp-block-column-is-layout-flow {
+        flex-wrap: nowrap !important;
+    }
+
+    /* Apply flex-basis override on page 35 column layout */
+    .page-id-35 .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column {
+        flex-basis: 40% !important;
+    }
+
+    /* Explicit column stacking per container on page 35 */
+    .page-id-35 .wp-block-columns.is-layout-flex.wp-container-core-columns-is-layout-4.wp-block-columns-is-layout-flex,
+    .page-id-35 .wp-block-columns.is-layout-flex.wp-container-core-columns-is-layout-1.wp-block-columns-is-layout-flex,
+    .page-id-35 .wp-block-columns.is-layout-flex.wp-container-core-columns-is-layout-2.wp-block-columns-is-layout-flex,
+    .page-id-35 .wp-block-columns.is-layout-flex.wp-container-core-columns-is-layout-3.wp-block-columns-is-layout-flex {
+        flex-wrap: nowrap !important;
+    }
+
+    /* Homepage: layout styling for another section (container-3) */
+    .home .wp-block-columns.is-layout-flex.wp-container-core-columns-is-layout-3.wp-block-columns-is-layout-flex {
+        margin: 0% !important;
+        padding: 2vw !important;
+        padding-bottom: 10vh !important;
+    }
+
+    /* BLOG ARCHIVE STYLING */
+
+    /* Blog archive title heading styling */
+    .blog .has-primary-color.has-dm-serif-font-family.has-x-large-font-size {
+        margin: 0% !important;
+        padding: 0% !important;
+        text-align: center;
+        margin-top: 4vh !important;
+        margin-bottom: 3vh !important;
+    }
+
+    /* Remove padding/margin from resized featured images */
+    .blog .wp-block-image.size-large.is-resized {
+        margin: 0% !important;
+        padding: 0% !important;
+    }
+
+    /* Strip margin/padding from blog query block */
+    .blog .wp-block-query.is-layout-flow.wp-block-query-is-layout-flow {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    /* Reset spacing on query post list (ul) */
+    .blog .wp-block-query.is-layout-flow.wp-block-query-is-layout-flow ul {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    /* Remove spacing from spacer block (often used between posts) */
+    .blog .wp-block-spacer {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+
+    /* Home: adjust spacing for section layout */
+    .home .wp-block-columns.is-layout-flex.wp-container-core-columns-is-layout-1.wp-block-columns-is-layout-flex {
+        margin: 3% !important;
+        padding: 0% !important;
+    }
+
+    /* Home: spacing under serif column block */
+    .home .wp-block-column.has-dm-serif-font-family.is-layout-flow.wp-block-column-is-layout-flow {
+        margin-bottom: 2vh !important;
+    }
+
+    /* Home: add spacing above a specific full-width group block */
+    .home .wp-block-group.has-primary-background-color.has-background.has-global-padding.is-layout-constrained.wp-container-core-group-is-layout-14.wp-block-group-is-layout-constrained {
+        padding-top: 10% !important;
+    }
+
+    /* Home: minor column width adjustment inside layout-9 */
+    .home .wp-container-core-group-is-layout-9 div {
+        width: 41vw;
+    }
+
+    /* Home: limit height of specific center-aligned serif heading */
+    .home .has-text-align-center.has-primary-color.has-text-color.has-link-color.has-dm-serif-font-family {
+        height: 3vh;
+    }
+
+    /* Page ID 35: adjust top padding, height, and spacing for main black background section */
+    .page-id-35 .wp-block-group.has-black-background-color.has-background.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained {
+        padding-top: 3vh !important;
+        height: auto !important;
+        margin-bottom: 5vh !important;
+    }
+
+    /* Page 35: style section heading */
+    .page-id-35 .wp-block-group.has-black-background-color.has-background.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained h2 {
+        margin-bottom: 3vh !important;
+        font-size: 1em !important;
+    }
+
+    /* Page 35: style paragraph text inside black group */
+    .page-id-35 .wp-block-group.has-black-background-color.has-background.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained p {
+        font-size: 1rem !important;
+    }
+
+    /* Page 35: control height and bottom padding for mono font block */
+    .page-id-35 .has-white-color.has-text-color.has-link-color.has-sometype-mono-font-family.wp-elements-483361a4c574cd22dd7063af05ac54e3 {
+        height: auto !important;
+        padding-bottom: 15% !important;
+    }
+
+    /* Page ID 37: apply border and padding to a group block */
+    .page-id-37 .wp-block-group.has-global-padding.is-layout-constrained.wp-container-core-group-is-layout-11.wp-block-group-is-layout-constrained {
+        border: 2px #090045 solid;
+        border-radius: 5px !important;
+        padding-left: 5vw !important;
+    }
+
+    /* Page 37: style large centered serif heading */
+    .page-id-37 .has-text-align-center.has-white-color.has-text-color.has-link-color.has-dm-serif-font-family.has-large-font-size {
+        padding-top: 6vh !important;
+        padding-bottom: 0 !important;
+    }
+
+    /* HEADER & FOOTER */
+
+    /* Style header container layout and alignment */
+    .block-editor-block-list__block.wp-block.alignwide.wp-block-group.block-editor-block-list__layout.wp-container-core-group-is-layout-429.is-layout-flex.wp-block-group-is-layout-flex.is-content-justification-space-between {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 1.5rem;
+        padding: 2rem;
+        flex-wrap: wrap;
+    }
+
+    /* Center content inside block editor iframe (useful for preview alignment) */
+    .block-editor-iframe__body.editor-styles-wrapper.admin-color-fresh.wp-embed-responsive div {
+        justify-content: center !important;
+    }
+
+    /* Allow full width alignment in constrained layout */
+    .is-layout-constrained > .alignwide {
+        width: 100vw;
+    }
+
+    /* Style middle navigation/header layout (shared section) */
+    .wp-block-group.alignwide.is-content-justification-space-between.is-layout-flex.wp-container-core-group-is-layout-3.wp-block-group-is-layout-flex {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        padding: 0 !important;
+    }
+
+    /* Remove margin/padding for layout container (possibly footer area) */
+    .wp-container-core-group-is-layout-4 {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Responsive/mobile nav container styling */
+    .wp-block-navigation__responsive-container.has-modal-open.is-menu-open {
+        background-color: #090045 !important; /* Deep navy */
+        color: white !important;
+        padding: 2rem;
+    }
+
+    /* Footer or final layout group sizing and alignment */
+    .wp-block-group.alignwide.is-content-justification-space-between.is-layout-flex.wp-container-core-group-is-layout-16.wp-block-group-is-layout-flex {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 74vw !important;
+    }
+
+
+   /* Shared layout group for centered flex container — ID: 17 */
+    .wp-block-group.alignwide.is-content-justification-space-between.is-layout-flex.wp-container-core-group-is-layout-17.wp-block-group-is-layout-flex {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 74vw !important;
+    }
+
+    /* Same layout config — for layout ID: 11 */
+    .wp-block-group.alignwide.is-content-justification-space-between.is-layout-flex.wp-container-core-group-is-layout-11.wp-block-group-is-layout-flex {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 74vw !important;
+    }
+
+    /* Same layout config — for layout ID: 6 */
+    .wp-block-group.alignwide.is-content-justification-space-between.is-layout-flex.wp-container-core-group-is-layout-6.wp-block-group-is-layout-flex {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 74vw !important;
+    }
+
+    /* Same layout config — for layout ID: 7 */
+    .wp-block-group.alignwide.is-content-justification-space-between.is-layout-flex.wp-container-core-group-is-layout-7.wp-block-group-is-layout-flex {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 74vw !important;
+    }
+
+    /* Same layout config — for layout ID: 8 */
+    .wp-block-group.alignwide.is-content-justification-space-between.is-layout-flex.wp-container-core-group-is-layout-8.wp-block-group-is-layout-flex {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 74vw !important;
+    }
 
       
 }

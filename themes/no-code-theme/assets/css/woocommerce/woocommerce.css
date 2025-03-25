@@ -706,7 +706,31 @@ table.wc-block-cart-items .wc-block-cart-items__row .wc-block-components-product
     margin-top: 3vh !important;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
 
+    /* Full-width layout for the cart on page ID 166 */
+    .page-id-166 .wc-block-components-sidebar-layout.wc-block-cart.wp-block-woocommerce-filled-cart-block.is-large {
+        width: 95vw !important; /* Take full screen width */
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    /* Set width of cart totals sidebar on tablet */
+    .page-id-166 .wc-block-components-sidebar.wc-block-cart__sidebar.wp-block-woocommerce-cart-totals-block {
+        width: 95vw !important; /* Leave a little margin */
+    }
+
+    /* Set width of cart items section on tablet */
+    .page-id-166 .wc-block-cart-items.wp-block-woocommerce-cart-line-items-block {
+        width: 95vw !important; /* Match sidebar for uniformity */
+    }
+      
+    /* Remove margin and padding for post content on page ID 167 */
+    .page-id-167 .entry-content.alignwide.wp-block-post-content.is-layout-flow.wp-block-post-content-is-layout-flow {
+        margin: 0% !important;
+        padding: 0% !important;
+    }
+}
 
 
   

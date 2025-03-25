@@ -773,7 +773,26 @@ table.wc-block-cart-items .wc-block-cart-items__row .wc-block-components-product
 
 }
 
+@media (max-width: 768px) {
+    /* Main checkout section next to sidebar (page ID 167) */
+    .wc-block-components-sidebar-layout .wc-block-components-main {
+      box-sizing: border-box;
+      margin: 0;
+      padding-right: 4.5283018868%;
+      width: 100%;
+    }
 
+    /* Expands cart items section to nearly full viewport width */
+    .is-large.wc-block-cart .wc-block-cart-items {
+        width: 96vw !important;
+    }
+
+    /* Expands cart sidebar (e.g., totals/summary) to match cart width */
+    .is-large.wc-block-cart .wc-block-components-sidebar {
+        width: 96vw !important;
+    }
+
+  }
   
 
   

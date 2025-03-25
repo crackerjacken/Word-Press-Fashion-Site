@@ -612,4 +612,285 @@ button.wp-element-button {
 }
 
    
+@media (min-width: 768px) and (max-width: 1023px) {
+
+   /* Scales image height relative to viewport; keeps aspect ratio */
+    .home .wp-image-70 {
+        height: 30vh !important;
+        width: auto;
+        object-fit: cover;
+    }
+
+    /* Ensures full-size images are neatly boxed and aligned */
+    .home .wp-block-image .wp-block-image .size-full img {
+        box-sizing: border-box;
+        height: 61vh;
+        max-width: 100%;
+        vertical-align: bottom;
+    }
+
+    /* Uniform button widths across various layout containers */
+    .home .wp-block-buttons.has-white-background-color.has-background.is-content-justification-center.is-layout-flex.wp-container-core-buttons-is-layout-3.wp-block-buttons-is-layout-flex * {
+        width: 73%;
+    }
+    .home .wp-block-buttons.has-white-background-color.has-background.is-content-justification-center.is-layout-flex.wp-container-core-buttons-is-layout-1.wp-block-buttons-is-layout-flex * {
+        width: 73%;
+    }
+    .home .wp-block-buttons.has-white-background-color.has-background.is-content-justification-center.is-layout-flex.wp-container-core-buttons-is-layout-4.wp-block-buttons-is-layout-flex * {
+        width: 73%;
+    }
+    .home .wp-block-buttons.has-white-background-color.has-background.is-content-justification-center.is-layout-flex.wp-container-core-buttons-is-layout-2.wp-block-buttons-is-layout-flex * {
+        width: 73%;
+    }
+
+    /* Responsive group layout with flexible rows and center alignment */
+    .home .wp-container-core-group-is-layout-9 {
+        width: 96vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap !important;
+        margin: auto !important;
+        margin-top: 4vh !important;
+    }
+
+    /* Child divs in layout-9 take approx. half screen width */
+    .home .wp-container-core-group-is-layout-9 div {
+        width: 46vw;
+    }
+
+    /* Forces image in layout-9 figures to full container width */
+    .home .wp-container-core-group-is-layout-9 figure img {
+        width: 100%;
+    }
+
+    /* Column block: fixed width unless stacked (i.e. mobile) */
+    .home .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column {
+        width: 32vw;
+    }
+
+    /* Forces flex layout on columns block (non-mobile) */
+    .home .wp-block-columns.is-layout-flex.wp-container-core-columns-is-layout-1.wp-block-columns-is-layout-flex {
+        display: flex !important;
+        flex-direction: row!important;
+    }
+
+    /* Styles the post grid layout responsively and center-aligned */
+    .home .wp-block-post-template.is-layout-flow.wp-block-post-template-is-layout-flow {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: flex !important;
+        flex-direction: row !important;
+        width: 90vw !important;
+        flex-wrap: wrap !important;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    /* Individual post cards in the grid: ~42vw width */
+    .home .wp-block-post-template.is-layout-flow.wp-block-post-template-is-layout-flow li {
+        width: 42vw !important;
+    }
+
+    /* Padding + margin adjustments for column layout block */
+    .home .wp-block-columns.is-layout-flex.wp-container-core-columns-is-layout-3.wp-block-columns-is-layout-flex {
+        padding: 5vw !important;
+        margin-top: 0vh !important;
+    }
+
+    /* Flex layout on columns + bottom spacing */
+    .home .wp-block-columns.is-layout-flex.wp-container-core-columns-is-layout-1.wp-block-columns-is-layout-flex {
+        margin-bottom: 10vh;
+        display: flex;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+    }
+
+    /* Prevents column block from shrinking too small */
+    .home .wp-block-column.is-layout-flow.wp-block-column-is-layout-flow {
+        width: auto !important;
+    }
+
+    /* Padding for center-aligned text blocks */
+    .home .has-text-align-center.has-black-color.has-sometype-mono-font-family {
+        padding: 0 2% !important;
+    }
+
+    /* Group block gets fixed width and full flex basis */
+    .home .wp-block-group.has-border-color.has-secondary-border-color.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained {
+        width: 43vw !important;
+        flex-basis: 100% !important;
+    }
+
+    /* Forces wrapping of column blocks */
+    .home .wp-block-columns {
+        flex-wrap: wrap !important;
+    }
+
+    /* Makes column items grow to fill available space */
+    .home .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column {
+        flex-basis: auto;
+        flex-grow: 1;
+    }
+
+    /* Bottom padding on group layout section */
+    .home .wp-block-group.has-primary-background-color.has-background.has-global-padding.is-layout-constrained.wp-container-core-group-is-layout-14.wp-block-group-is-layout-constrained {
+        padding-bottom: 10% !important;
+    }
+
+    /* Ensures flex layout for columns container (layout-2) */
+    .home .wp-block-columns.is-layout-flex.wp-container-core-columns-is-layout-2.wp-block-columns-is-layout-flex {
+        display: flex !important;
+    }
+
+    /* Ensures flex layout for columns container (layout-3) */
+    .home .wp-block-columns.is-layout-flex.wp-container-core-columns-is-layout-3.wp-block-columns-is-layout-flex {
+        display: flex !important;
+    }
+
+
+    /* Adjusts width of inner divs inside column layout-2 */
+    .home .wp-block-columns.is-layout-flex.wp-container-core-columns-is-layout-2.wp-block-columns-is-layout-flex div {
+        width: 21vw !important;
+    }
+
+    /* Overrides and adjusts padding/margin of group layout-14 */
+    .home .wp-block-group.has-primary-background-color.has-background.has-global-padding.is-layout-constrained.wp-container-core-group-is-layout-14.wp-block-group-is-layout-constrained {
+        margin: 0% !important;
+        padding: 3% !important;
+    }
+
+    /* Width tuning for nested divs in layout-3 columns */
+    .home .wp-block-columns.is-layout-flex.wp-container-core-columns-is-layout-3.wp-block-columns-is-layout-flex div {
+        width: 20vw !important;
+    }
+
+    /* Reset spacing for layout-3 column group */
+    .home .wp-block-columns.is-layout-flex.wp-container-core-columns-is-layout-3.wp-block-columns-is-layout-flex {
+        padding: 0vw !important;
+        margin: 0% !important;
+    }
+
+    /* Later override of top padding for layout-14 (duplicate rule above) */
+    .home .wp-block-group.has-primary-background-color.has-background.has-global-padding.is-layout-constrained.wp-container-core-group-is-layout-14.wp-block-group-is-layout-constrained {
+        padding-top: 10% !important;
+    }
+
+    /* Further override: adds extra bottom padding to layout-3 columns */
+    .home .wp-block-columns.is-layout-flex.wp-container-core-columns-is-layout-3.wp-block-columns-is-layout-flex {
+        padding-bottom: 13vw !important;
+    }
+
+    /* Forces column auto-basis even on non-stacked layouts */
+    .home .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column {
+        flex-basis: auto !important;
+    }
+
+    /* --- ABOUT PAGE (ID: 35) --- */
+
+    /* Makes column layout flex horizontally, removing spacing */
+    .page-id-35 .wp-block-column.is-layout-flow.wp-block-column-is-layout-flow {
+        display: flex !important;
+        flex-direction: row !important;
+        margin: 0% !important;
+        padding: 0% !important;
+    }
+
+    /* Container group: border radius + central alignment + full width */
+    .page-id-35 .wp-block-group.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained {
+        border-radius: 12px;
+        width: 90vw !important;
+        margin: 0% !important;
+        padding: 0% !important;
+        margin: 0 auto !important;
+    }
+
+    /* Image container: full width and stripped margins */
+    .page-id-35 .wp-block-group.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained figure {
+        width: 100%!important;
+        margin: 0 auto;
+        margin: 0% !important;
+        padding: 0% !important;
+    }
+
+    /* Forces stacked vertical layout for layout-4 columns */
+    .page-id-35 .wp-block-columns.is-layout-flex.wp-container-core-columns-is-layout-4.wp-block-columns-is-layout-flex {
+        display: flex !important;
+        flex-direction: column !important;
+        margin: 0% !important;
+        padding: 0% !important;
+    }
+
+    /* Prevents wrapping in row layout for columns on About */
+    .page-id-35 .wp-block-column.is-layout-flow.wp-block-column-is-layout-flow {
+        flex-wrap: nowrap !important;
+    }
+
+    /* Custom basis sizing for mobile-stacked fallback */
+    .page-id-35 .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column {
+        flex-basis: 40% !important;
+    }
+
+    /* Repeated enforcement of vertical layout on layout-4 columns */
+    .page-id-35 .wp-block-columns.is-layout-flex.wp-container-core-columns-is-layout-4.wp-block-columns-is-layout-flex {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    /* Prevent column wrapping for specific layouts */
+    .page-id-35 .wp-block-columns.is-layout-flex.wp-container-core-columns-is-layout-1.wp-block-columns-is-layout-flex {
+        flex-wrap: nowrap !important;
+    }
+    .page-id-35 .wp-block-columns.is-layout-flex.wp-container-core-columns-is-layout-2.wp-block-columns-is-layout-flex {
+        flex-wrap: nowrap !important;
+    }
+    .page-id-35 .wp-block-columns.is-layout-flex.wp-container-core-columns-is-layout-3.wp-block-columns-is-layout-flex {
+        flex-wrap: nowrap !important;
+    }
+
+    /* Black section block: auto height and vertical padding */
+    .page-id-35 .wp-block-group.has-black-background-color.has-background.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained {
+        height: auto !important;
+        padding-top: 3vh !important;
+    }
+
+    /* --- PAGE ID: 37 --- */
+
+    /* Margin/padding reset for layout-1 on this page */
+    .page-id-37 .wp-block-columns.is-layout-flex.wp-container-core-columns-is-layout-1.wp-block-columns-is-layout-flex {
+        margin: 0% !important;
+        padding: 4vw !important;
+    }
+
+
+    /* PAGE ID: 37 — Enforces vertical stacking in column layout */
+    .page-id-37 .wp-block-columns.is-layout-flex.wp-container-core-columns-is-layout-1.wp-block-columns-is-layout-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Bordered block with left padding and slight corner rounding */
+    .page-id-37 .wp-block-group.has-global-padding.is-layout-constrained.wp-container-core-group-is-layout-11.wp-block-group-is-layout-constrained {
+        border: 2px #090045 solid;
+        border-radius: 5px !important;
+        padding-left: 5vw !important;
+    }
+
+    /* BLOG PAGE — Serif title block styling with centered alignment */
+    .blog .has-primary-color.has-dm-serif-font-family.has-x-large-font-size {
+        margin: 0% !important;
+        padding: 0% !important;
+        text-align: center;
+        margin-top: 5vh !important;
+        margin-bottom: 3vh !important;
+    }
+
+    /* Blog image block with full spacing reset */
+    .blog .wp-block-image.size-large.is-resized {
+        margin: 0% !important;
+        padding: 0% !important;
+    }
+
+
+        
+}  
 
